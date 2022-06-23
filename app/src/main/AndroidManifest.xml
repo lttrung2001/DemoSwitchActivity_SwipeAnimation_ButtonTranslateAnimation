@@ -14,10 +14,12 @@
         android:theme="@style/Theme.DemoActivityAndIntent"
         tools:targetApi="31" >
         <activity
+            android:parentActivityName=".UpdateInfoActivity"
             android:name=".ShowAllActivity"
             android:exported="false" />
         <activity
             android:name=".UpdateInfoActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

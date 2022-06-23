@@ -3,11 +3,16 @@ package com.ltbth.demo
 import java.io.Serializable
 
 class Student (fullName: String, address: String) : Serializable {
-    public val id: Int
-    public var fullName: String
-    public var address: String
+    var id: Int
+    var fullName: String
+    var address: String
     init {
-        this.id = Student.MAX_ID
+        this.id = MAX_ID
+        this.fullName = fullName
+        this.address = address
+    }
+    constructor(id: Int, fullName: String, address: String) : this(fullName, address) {
+        this.id = id
         this.fullName = fullName
         this.address = address
     }
